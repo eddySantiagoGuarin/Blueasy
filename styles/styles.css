@@ -7,7 +7,7 @@
 /*----------------------DIV1-------------------------------------------------*/
 
 .div1{
-    background-image: url(/Falla/blueasy/assets/images/Fondo.png);
+    background-image: url(/assets/images/Fondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +169,7 @@
 
 /*----------------------DIV6-------------------------------------------------*/
 .div6{
-    background-image: url(/Falla/blueasy/assets/images/bg_whoIs.png);
+    background-image: url(/assets/images/bg_whoIs.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +231,7 @@
 
 /*----------------------DIV8-------------------------------------------------*/
 .div8{
-    background-image: url(/Falla/blueasy/assets/images/bg_contact.png);
+    background-image: url(/assets/images/bg_contact.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,4 +306,24 @@ footer ul{
     display: flex;
     list-style: none;
     gap: 10px;
+}
+
+/*---------------------------- MEDIA QUERIES --------------------------------*/
+@media (max-width: 1279px) {
+    .div1 nav{
+        background-color: tomato;
+        
+    }
+}
+
+@media (max-width: 920px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+   
 }
