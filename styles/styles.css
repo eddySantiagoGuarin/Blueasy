@@ -107,3 +107,203 @@
     grid-template-columns: repeat(4,1fr);
     gap: 15px;
 }
+
+/*----------------------DIV4-------------------------------------------------*/
+
+.div4{
+    background-color: #516067;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 30px;
+    place-items: center;
+    padding: 5% 4%;
+}
+
+.div4_1{
+    width: 80%;
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: repeat(3,flex);
+    gap: 15px;
+}
+
+.div4_1 span{
+    font-size: 2rem;
+}
+
+.div4_1 button{
+    width: 70px;
+    height: 40px;
+    background-color: transparent;
+    border: #35444b solid 2px;
+    color: #35444b;
+}
+
+/*----------------------DIV5-------------------------------------------------*/
+
+.div5{
+    background-color: #4bcaff;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5% 20% ;
+    gap : 15px;
+}
+
+.div5_1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div5 span{
+    font-size: 1.5rem;
+}
+
+.div5 img{
+    align-self: flex-end;
+    width: 30px;
+    height: auto;
+}
+
+/*----------------------DIV6-------------------------------------------------*/
+.div6{
+    background-image: url(/Falla/blueasy/assets/images/bg_whoIs.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 20%;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.div6_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.div6_1 p span{
+    font-size: 2rem;
+}
+.div6_2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.div6_2_1{
+    display: flex;
+    gap: 15px;
+}
+.div6_2_1 img{
+    width: 60px;
+    height: 60px;
+    
+}
+/*----------------------DIV7-------------------------------------------------*/
+
+.div7{
+    background-color: #ffffff;
+    color: #696767;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5% 20% ;
+    gap : 15px;
+}
+
+.div7_1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wl{
+    color: #4bcaff;
+    font-size: 0.7rem;
+}
+.div7_1 p span{
+    color: #696767;
+    font-size: 4rem;
+}
+
+/*----------------------DIV8-------------------------------------------------*/
+.div8{
+    background-image: url(/Falla/blueasy/assets/images/bg_contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 20%;
+    color: #ffffff;
+    gap: 30px;
+}
+
+.div8 form{
+    display: grid;
+    grid-template-columns: repeat(2,flex);
+    grid-template-rows: repeat(2,flex);
+    gap: 25px;
+}
+
+.div8_1 input{
+    width: 350px;
+    height: 45px;
+    border:  2px solid #ffffff ;
+    background-color: transparent;
+}
+
+.div8_3{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.div8_1 , .div8_2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div8_2{
+    gap: 30px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.div8_2 p{
+    height: 45px;
+    width: 350px
+} 
+
+.div8_3 textarea{
+    width: 100%;
+    height: 260px;
+    border:  2px solid #ffffff ;
+    background-color: transparent;
+}
+
+.div8 button{
+    border: none;
+    height: 50px;
+    width: 170px;
+    color: #ffffff;
+    background-color: #4bcaff;
+    margin-top: 10px;
+}
+
+/*---------------------------------FOOTER--------------------------------*/
+footer{
+    background-color: #35444b;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
