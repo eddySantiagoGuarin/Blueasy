@@ -31,8 +31,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
-    margin:0px 30 0px 30px;
+    padding: 0 30px;
+    margin: 0;
 }
 
 .div1 nav h2 span{
@@ -91,7 +91,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin:0px 30 0px 30px;
+    margin: 0 auto;
 }
 
 .div3 nav ul{
@@ -123,7 +123,7 @@
     width: 80%;
     color: #ffffff;
     display: grid;
-    grid-template-rows: repeat(3,flex);
+    grid-template-rows: repeat(3, auto);
     gap: 15px;
 }
 
@@ -146,9 +146,9 @@
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    padding: 5% 20% ;
-    gap : 15px;
+    justify-content: center;
+    padding: 5% 20%;
+    gap: 15px;
 }
 
 .div5_1{
@@ -176,7 +176,7 @@
     padding: 5% 20%;
     color: #ffffff;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
@@ -200,7 +200,6 @@
 .div6_2_1 img{
     width: 60px;
     height: 60px;
-    
 }
 /*----------------------DIV7-------------------------------------------------*/
 
@@ -209,9 +208,9 @@
     color: #696767;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    padding: 5% 20% ;
-    gap : 15px;
+    justify-content: center;
+    padding: 5% 20%;
+    gap: 15px;
 }
 
 .div7_1{
@@ -242,15 +241,16 @@
 
 .div8 form{
     display: grid;
-    grid-template-columns: repeat(2,flex);
-    grid-template-rows: repeat(2,flex);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 25px;
 }
 
 .div8_1 input{
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 45px;
-    border:  2px solid #ffffff ;
+    border: 2px solid #ffffff;
     background-color: transparent;
 }
 
@@ -260,7 +260,7 @@
     flex-direction: column;
 }
 
-.div8_1 , .div8_2{
+.div8_1, .div8_2{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -272,14 +272,14 @@
     grid-row: 1/2;
 }
 .div8_2 p{
-    height: 45px;
-    width: 350px
-} 
+    min-height: 45px;
+    width: 100%;
+}
 
 .div8_3 textarea{
     width: 100%;
     height: 260px;
-    border:  2px solid #ffffff ;
+    border: 2px solid #ffffff;
     background-color: transparent;
 }
 
@@ -292,6 +292,13 @@
     margin-top: 10px;
 }
 
+/* Responsive image helper */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /*---------------------------------FOOTER--------------------------------*/
 footer{
     background-color: #35444b;
@@ -299,7 +306,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:90px;
+    height: 90px;
 }
 
 footer ul{
@@ -312,18 +319,169 @@ footer ul{
 @media (max-width: 1279px) {
     .div1 nav{
         background-color: tomato;
-        
+    }
+
+    .div2{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .div2_1{
+        width: 240px;
+    }
+
+    .div3_1{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 920px) {
-    
+    .div1 nav{
+        padding: 0 15px;
+    }
+
+    .div1 nav ul{
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div2{
+        gap: 18px;
+    }
+
+    .div2_1{
+        width: calc(50% - 15px);
+    }
+
+    .div3_1{
+        gap: 15px;
+    }
+
+    .div4,
+    .div6,
+    .div8{
+        padding: 5% 8%;
+    }
+
+    .div8 form{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 768px) {
-    
+    .div1 nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .div1 nav ul{
+        justify-content: center;
+    }
+
+    .div2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div2_1{
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .div3_1{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .div4,
+    .div6{
+        grid-template-columns: 1fr;
+    }
+
+    .div4_1{
+        width: 100%;
+    }
+
+    .div5,
+    .div7,
+    .div8{
+        padding: 5% 8%;
+    }
+
+    .div8 form{
+        grid-template-columns: 1fr;
+    }
+
+    .div8_1,
+    .div8_2{
+        width: 100%;
+    }
+
+    .div8 button{
+        width: 100%;
+        max-width: 320px;
+        align-self: center;
+    }
+
+    footer ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
-   
+    .div1 nav{
+        padding: 12px 16px;
+    }
+
+    .div1 h1{
+        font-size: 1.8rem;
+        padding: 0 16px;
+    }
+
+    .div2_1,
+    .div3_1 img,
+    .div4_1 img{
+        width: 100%;
+    }
+
+    .div3_1{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .div4,
+    .div6,
+    .div7,
+    .div8{
+        padding: 5% 5%;
+    }
+
+    .div5_1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .div8 form{
+        gap: 20px;
+    }
+
+    .div8 button{
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+        padding: 20px 0;
+    }
+
+    footer ul{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
