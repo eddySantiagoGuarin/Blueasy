@@ -7,7 +7,7 @@
 /*----------------------DIV1-------------------------------------------------*/
 
 .div1{
-    background-image: url(/assets/images/Fondo.png);
+    background-image: url(assets/images/Fondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +169,7 @@
 
 /*----------------------DIV6-------------------------------------------------*/
 .div6{
-    background-image: url(/assets/images/bg_whoIs.png);
+    background-image: url(assets/images/bg_whoIs.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,7 +230,7 @@
 
 /*----------------------DIV8-------------------------------------------------*/
 .div8{
-    background-image: url(/assets/images/bg_contact.png);
+    background-image: url(assets/images/bg_contact.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
